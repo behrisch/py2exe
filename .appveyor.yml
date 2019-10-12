@@ -12,7 +12,7 @@ configuration: Release
 
 install:
   - curl -o python38.exe https://www.python.org/ftp/python/3.8.0/python-3.8.0rc1-amd64.exe
-  - python38.exe /quiet TargetDir="C:\\Python38-x64"
+  - python38.exe /quiet TargetDir="C:\\Python38-x64" Include_debug=1
   - set PYTHONPATH=%PYTHON%
   - set PYTHONHOME=%PYTHON%
   - set PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%
